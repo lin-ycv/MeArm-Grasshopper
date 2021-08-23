@@ -9,22 +9,22 @@ void setup() {
   s[2].attach(9);//left
   s[3].attach(6);//gripper
   Serial.begin(9600);
-  Serial.setTimeout(10);
+  Serial.setTimeout(5);
 }
 void loop() {
   if (Serial.available() > 0) {
     str = Serial.readString();
-    Serial.print("\r\ninput:"+str);
+    //Serial.print("\r\ninput:"+str);
     int i = 0;
     int temp =0;
     for(int j =0; j< str.length(); j++){
       if(isdigit(str[j])){
         temp*=10;
         temp+=String(str[j]).toInt();
-        Serial.print("\r\ni value:"+String(i)+" j value:"+String(j)+" temp value:"+String(temp));
+        //Serial.print("\r\ni value:"+String(i)+" j value:"+String(j)+" temp value:"+String(temp));
       }
       else if(str[j]==','||j==str.length()-1){
-        Serial.print("\r\n------------");
+        //Serial.print("\r\n------------");
         angle[i]=temp;
         temp=0;
         i++;
@@ -36,6 +36,6 @@ void loop() {
     s[1].write(angle[1]);
     s[2].write(angle[2]);
     s[3].write(angle[3]);
-    Serial.print(+"\r\n"+String(s[0].read())+", "+String(s[1].read())+", "+String(s[2].read())+", "+String(s[3].read())+"\r\n");
+    //Serial.print(+"\r\n"+String(s[0].read())+", "+String(s[1].read())+", "+String(s[2].read())+", "+String(s[3].read())+"\r\n");
   }
 }
