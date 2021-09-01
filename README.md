@@ -1,5 +1,5 @@
 # MeArm-Grasshopper
-IK solver for MeArm using K2
+IK solver for MeArm using Kangaroo 2
 
 
 Kinematics is solved thru simulation (Kangaroo), therefore some inaccuracies is to be expected. This shouldn't be an issue, since meArm isn't highly accurate to begin with.
