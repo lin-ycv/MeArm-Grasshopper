@@ -32,10 +32,13 @@ void loop() {
       }
       else continue;
     }
-    s[0].write(angle[0]);
-    s[1].write(angle[1]);
-    s[2].write(angle[2]);
-    s[3].write(angle[3]);
+    if(str[0]!='E'){
+      s[0].write(angle[0]);
+      s[1].write(angle[1]);
+      s[2].write(angle[2]);
+      s[3].write(angle[3]);
+    }
     //Serial.print(+"\r\n"+String(s[0].read())+", "+String(s[1].read())+", "+String(s[2].read())+", "+String(s[3].read())+"\r\n");
   }
+  delay(100);
 }
