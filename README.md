@@ -1,5 +1,10 @@
 # MeArm-Grasshopper
-IK solver for MeArm.
+IK solver for MeArm. MeArm servo default positions should be assembled as below for the angle values to match:
+- Base: Straight forward @ 90
+- Right: Straight up @ 90
+- Left: Straight up @ 90
+- Gripper: Open @ 90
+
 
 
 ## [Kangaroo Method](https://github.com/lin-ycv/MeArm-Grasshopper/blob/main/meArm_InverseKinematics_K2.gh)
