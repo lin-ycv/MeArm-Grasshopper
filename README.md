@@ -1,4 +1,6 @@
 # MeArm-Grasshopper
+Demo: https://www.instagram.com/p/CTeXCVBprB6/
+
 IK solver for MeArm. MeArm servo default positions should be assembled as below for the angle values to match:
 - Base: Straight forward @ 90
 - Right: Straight up @ 90
