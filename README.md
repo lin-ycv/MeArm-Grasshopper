@@ -9,11 +9,11 @@ IK solver for MeArm. MeArm servo default positions should be assembled as below 
 
 
 
-## [Kangaroo Method](https://github.com/lin-ycv/MeArm-Grasshopper/blob/main/meArm_InverseKinematics_K2.gh)
+## Kangaroo Method
 Kinematics is solved thru simulation (Kangaroo), therefore some inaccuracies is to be expected. This shouldn't be an issue, since meArm isn't highly accurate to begin with.
 
 
-## [Trigonometric Method](https://github.com/lin-ycv/MeArm-Grasshopper/blob/main/meArm_InverseKinematics.gh)
+## Trigonometric Method
 Kinematics is solved thru trigonometry, and proper mechanical limit checks are implemented.
 
 
